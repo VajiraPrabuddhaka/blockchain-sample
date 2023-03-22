@@ -67,5 +67,9 @@ func main() {
 	Blockchain = append(Blockchain, block2)
 	fmt.Println("Blockchain:", Blockchain)
 
+	block3 := generateBlock(Blockchain[len(Blockchain)-1], "Transaction 3")
+	Blockchain = append(Blockchain, block3)
+	fmt.Println("Blockchain:", Blockchain)
+
 	replaceChain(Blockchain)
 }
